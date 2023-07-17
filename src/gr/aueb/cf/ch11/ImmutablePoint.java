@@ -1,15 +1,20 @@
 package gr.aueb.cf.ch11;
 
 /**
- * Immutable Point
+ * Defines an immutable Point
  */
-public final class ImmutablePoint {
+final class ImmutablePoint {
     private final int x;
     private final int y;
 
-    public ImmutablePoint() {
+    ImmutablePoint() {
         x = 0;
         y = 0;
+    }
+
+    ImmutablePoint(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     public int getX() {
@@ -18,5 +23,10 @@ public final class ImmutablePoint {
 
     public int getY() {
         return y;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + ")";
     }
 }

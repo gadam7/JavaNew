@@ -14,6 +14,7 @@ public class PointApp {
 
         Point p4 = Point.getRandomPoint();
         Point p5 = Point.getPoint();
+        Point p6 = Point.getZeroPoint();
 
         p3.setX(7);
         p3.setY(12);
@@ -21,5 +22,8 @@ public class PointApp {
         System.out.println(p1.pointToString());
         System.out.println(p2.pointToString());
         System.out.println(p3.pointToString());
+        System.out.println(p4.pointToString());
+        System.out.println(p5.pointToString());
+        System.out.println(p6.pointToString());
     }
 }
